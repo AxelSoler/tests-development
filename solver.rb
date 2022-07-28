@@ -20,4 +20,10 @@ class Solver
 
     str.chars.reverse.join
   end
+
+  def fizzbuzz(int)
+    if int % 15 == 0
+      'fizzbuzz'
+    end
+  end
 end
