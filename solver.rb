@@ -24,6 +24,8 @@ class Solver
   def fizzbuzz(int)
     if int % 15 == 0
       'fizzbuzz'
+    elsif int % 5 == 0
+      'buzz'
     end
   end
 end
