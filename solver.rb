@@ -8,6 +8,8 @@ class Solver
       answer
     elsif [0, 1].include? val
       1
+    elsif val < 0
+      raise StandardError.new 'Positive values only'
     end
   end
 end

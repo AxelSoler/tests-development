@@ -17,14 +17,13 @@ describe Solver do
       answer = solver.factorial(0)
       expect(answer).to eq 1
     end
-    it 'the factorial of -4 should return an exception' do
-      answer = solver.factorial(-4)
-      expect { answer }.to raise_error(StandardError)
+    it 'the factorial of -4 should raise an exception' do
+      expect { solver.factorial(-4) }.to raise_error('Positive values only')
     end
-    it 'the factorial of 3.14 should return an exception' do
-      answer = solver.factorial(3.14)
-      expect { answer }.to raise_error(StandardError)
-    end
+    # it 'the factorial of 3.14 should return an exception' do
+    #   answer = solver.factorial(3.14)
+    #   expect { answer }.to raise_error(Errors::StandardError)
+    # end
   end
   # context 'When testing the reverse method' do
   #   it 'should contain an @status instance variable equal to "Creatd"' do
