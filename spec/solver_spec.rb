@@ -26,4 +26,16 @@ describe Solver do
       expect { answer }.to raise_error(StandardError)
     end
   end
+  # context 'When testing the reverse method' do
+  #   it 'should contain an @status instance variable equal to "Creatd"' do
+  #     app = App.new
+  #     expect(app.status).to eq 'Created'
+  #   end
+  # end
+  # context 'When testing the fizzbuzz method' do
+  #   it 'should contain an @status instance variable equal to "Creatd"' do
+  #     app = App.new
+  #     expect(app.status).to eq 'Created'
+  #   end
+  # end
 end
