@@ -28,6 +28,8 @@ class Solver
       'buzz'
     elsif int % 3 == 0
       'fizz'
+    else
+      "#{int}"
     end
   end
 end
