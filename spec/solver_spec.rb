@@ -36,10 +36,18 @@ describe Solver do
     end
   end
 
-  # context 'When testing the fizzbuzz method' do
-  #   it 'should contain an @status instance variable equal to "Creatd"' do
-  #     app = App.new
-  #     expect(app.status).to eq 'Created'
-  #   end
-  # end
+  context 'When testing the fizzbuzz method' do
+    it 'should return fizz if the input is a multiple of 3' do
+      expect(solver.fizzbuzz(3)).to eq 'fizz'
+    end
+    it 'should return buzz if the input is a multiple of 5' do
+      expect(solver.fizzbuzz(10)).to eq 'buzz'
+    end
+    it 'should return fizz if the input is a multiple of 3 and 5' do
+      expect(solver.fizzbuzz(45)).to eq 'fizzbuzz'
+    end
+    it 'should return N if the input is otherwise' do
+      expect(solver.fizzbuzz(17)).to eq '17'
+    end
+  end
 end
