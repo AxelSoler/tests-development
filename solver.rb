@@ -14,4 +14,10 @@ class Solver
       raise StandardError, 'Positive values only'
     end
   end
+
+  def reverse(str)
+    raise StandardError, 'String values only' unless str.is_a? String
+
+    str.chars.reverse.join
+  end
 end
